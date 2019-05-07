@@ -64,13 +64,13 @@ public class Tester_OOP_EX3 {
 	 * call the function sanityTest 3 times, each time with a OpenHashSet with a different constructor.
 	 * see sanityTest doc.
 	 */
-//	@Test
-//	public void openHashSet_1_sanity_check() {
-//		sanityTest(new OpenHashSet());
-//		sanityTest(new OpenHashSet(0.60f, 0.40f));
-//		java.lang.String[] data1 = {};
-//		sanityTest(new OpenHashSet(data1));
-//	}
+	@Test
+	public void openHashSet_1_sanity_check() {
+		sanityTest(new OpenHashSet());
+		sanityTest(new OpenHashSet(0.60f, 0.40f));
+		java.lang.String[] data1 = {};
+		sanityTest(new OpenHashSet(data1));
+	}
 
 	/**
 	 * call the function aLotOfStrings_test 3 times, each time with a OpenHashSet with a different constructor.
@@ -135,11 +135,11 @@ public class Tester_OOP_EX3 {
 	@Test
 	public void ClosedHashSet_6_big_numbers() {
 
-//		aLotOfStrings_test(new ClosedHashSet());
-//		aLotOfStrings_test(new ClosedHashSet(0.60f, 0.40f));
-//		aLotOfStrings_test(new ClosedHashSet(0.95f, 0.05f));
-//		aLotOfStrings_test(new ClosedHashSet(1f, 0f));
-//		aLotOfStrings_test(new ClosedHashSet(0.50f, 0.50f));
+		aLotOfStrings_test(new ClosedHashSet());
+		aLotOfStrings_test(new ClosedHashSet(0.60f, 0.40f));
+		aLotOfStrings_test(new ClosedHashSet(0.95f, 0.05f));
+		aLotOfStrings_test(new ClosedHashSet(1f, 0f));
+		aLotOfStrings_test(new ClosedHashSet(0.50f, 0.50f));
 		java.lang.String[] data1 = {};
 		aLotOfStrings_test(new ClosedHashSet(data1));
 	}
@@ -158,11 +158,11 @@ public class Tester_OOP_EX3 {
 //	 * call the function capacity_test.
 //	 * see capacity_test docs.
 //	 */
-//	@Test
-//	public void ClosedHashSet_8_capacityTest() {
-//		capacity_test(new ClosedHashSet());
-//	}
-//
+	@Test
+	public void ClosedHashSet_8_capacityTest() {
+		capacity_test(new ClosedHashSet());
+	}
+
 
 	// ----------------------facade tests---------------------------
 //
@@ -289,7 +289,7 @@ public class Tester_OOP_EX3 {
 
 			// should contain it now
 			assertTrue("problem with the string " + i, hashSet.contains(Integer.toString(i)));
-			System.out.println(i);
+
 
 			// should be able to delete it now
 			assertTrue("problem with the string " + i, hashSet.delete(Integer.toString(i)));

@@ -33,8 +33,8 @@ public class ClosedHashSet extends SimpleHashSet {
          *  upper load factor (0.75), and lower load factor (0.25).
          Parameters:
          data - Values to add to the set.*/
-        this.higherCapacity = DEFAULT_HIGHER_CAPACITY;
-        this.lowerCapacity = DEFAULT_LOWER_CAPACITY;
+        this.upperLoadFactor = DEFAULT_HIGHER_CAPACITY;
+        this.lowerLoadFactor = DEFAULT_LOWER_CAPACITY;
         this.capacity = INITIAL_CAPACITY;
         this.mySet = new String[16];
         this.mySize=0;
